@@ -14,7 +14,7 @@ from datetime import datetime
 
 # Load API URL from config.env or use default
 
-BASE_API_URL = "https://caffienet0code-agents-blocker-4hj7.vercel.app"
+# BASE_API_URL = "https://caffienet0code-agents-blocker-4hj7.vercel.app"
 def load_config():
     config_file = os.path.join(os.path.dirname(__file__), 'config.env')
     if os.path.exists(config_file):
@@ -26,6 +26,7 @@ def load_config():
     return 'http://localhost:8000'
 
 BASE_API_URL = load_config()
+BASE_API_URL = "https://caffienet0code-agents-blocker-4hj7.vercel.app"
 SDK_API_URL = f'{BASE_API_URL}/api/click-detection/events/os'
 
 def parse_log_line(line):
