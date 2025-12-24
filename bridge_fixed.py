@@ -13,6 +13,8 @@ import os
 from datetime import datetime
 
 # Load API URL from config.env or use default
+
+BASE_API_URL = "https://caffienet0code-agents-blocker-4hj7.vercel.app"
 def load_config():
     config_file = os.path.join(os.path.dirname(__file__), 'config.env')
     if os.path.exists(config_file):
